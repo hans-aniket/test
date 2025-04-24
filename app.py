@@ -14,7 +14,7 @@ def load_models():
 model, kmeans, ripeness_map = load_models()
 
 # 2. App UI
-st.title("Fruit Ripeness Detector")
+st.title("Fruit shelf life assessment")
 uploaded = st.file_uploader("Upload a fruit image", type=['jpg','jpeg','png'])
 
 if uploaded:
