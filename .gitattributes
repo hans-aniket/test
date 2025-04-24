@@ -1,0 +1,2 @@
+models/fruit_quality_model.keras filter=lfs diff=lfs merge=lfs -text
+models/kmeans_ripeness.pkl filter=lfs diff=lfs merge=lfs -text

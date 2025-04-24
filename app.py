@@ -5,8 +5,9 @@ import joblib
 # 1. Load & cache your models once
 @st.cache_resource
 def load_models():
-    model = tf.keras.models.load_model('fruit_quality_model.keras')
-    kmeans = joblib.load('kmeans_ripeness.pkl')
+    model = tf.keras.models.load_model('models/fruit_quality_model.keras')
+    kmeans = joblib.load('models/kmeans_ripeness.pkl')
+
     ripeness_map = {0: 'unripe', 1: 'mid-ripe', 2: 'ripe', 3: 'overripe'}
     return model, kmeans, ripeness_map
 
